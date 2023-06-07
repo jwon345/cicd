@@ -17,7 +17,7 @@ def update():
 
 @api.route('/', methods=['GET'])
 def mainPage():
-    return "<h1>welcome :)</h1>"
+    return "<h1>welcome :), This update now</h1>"
 
 
 if __name__ == '__main__':
