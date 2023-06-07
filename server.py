@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template 
 import os
 
 HOST = "0.0.0.0"
@@ -17,7 +17,7 @@ def update():
 
 @api.route('/', methods=['GET'])
 def mainPage():
-    return "<h1>welcome :), This update now</h1>"
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
