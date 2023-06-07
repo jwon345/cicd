@@ -15,5 +15,11 @@ api.debug = True
 def update():
     os._exit(1)
 
+@api.route('/', methods=['GET'])
+def mainPage():
+    return "<h1>welcome :)</h1>"
+
+
 if __name__ == '__main__':
     api.run( HOST,PORT, threaded=True, debug=False)
+
