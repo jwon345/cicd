@@ -17,7 +17,11 @@ def update():
 
 @api.route('/', methods=['GET'])
 def mainPage():
-    return render_template('index.html')
+    f = open("updated.txt", "r")
+    Update = f.read()
+    f = open("./templates/description.txt", "r")
+    descriptionText = f.read()
+    return render_template('index.html', content=Update, description=descriptionText)
 
 
 if __name__ == '__main__':

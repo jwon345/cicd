@@ -1,8 +1,13 @@
-# Testing Webhooks
+# Personal Server. 
 
 ## What is this?
-This project has webhooks linked to send a post request when a push is sent. 
+This project explores CI/CD development. It has webhooks linked from github to send a post request when a push is sent. 
      currently linked to my personal server :)
+### JamesWong.space
+
+## To do
+    -add routes for IOT devices
+    
 
 ## .service file
 
